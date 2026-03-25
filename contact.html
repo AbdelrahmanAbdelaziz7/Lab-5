@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+
+<!-- Skip Link -->
+<a href="#main-content">Skip to main content</a>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<!-- Navigation -->
+<nav aria-label="Main navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<main id="main-content">
+
+    <!-- Form -->
+    <form aria-label="Contact form">
+
+        <!-- Fieldset 1 -->
+        <fieldset>
+            <legend>Your Details</legend>
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br>
+
+            <label for="phone">Phone (optional):</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset 2 -->
+        <fieldset>
+            <legend>Your Message</legend>
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required aria-describedby="message-help"></textarea>
+
+            <!-- Helper text -->
+            <p id="message-help">Please enter at least a few words describing your request.</p>
+        </fieldset>
+
+        <br>
+
+        <!-- Fieldset 3 -->
+        <fieldset>
+            <legend>How did you hear about us?</legend>
+
+            <input type="radio" id="social" name="source" value="social" required>
+            <label for="social">Social Media</label>
+
+            <br>
+
+            <input type="radio" id="friend" name="source" value="friend">
+            <label for="friend">Friend</label>
+
+            <br>
+
+            <input type="radio" id="search" name="source" value="search">
+            <label for="search">Search Engine</label>
+
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+<table border="1">
+  <caption>Messages Received</caption>
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Message</th>
+      <th scope="col">Date</th>
+      <th scope="col">Priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td rowspan="2">Alice Johnson</td>
+      <td rowspan="2"><a href="mailto:alice@example.com">alice@example.com</a></td>
+      <td>Hello, I would like more info about your projects.</td>
+      <td>2025-03-01</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Can you share your GitHub profile?</td>
+      <td>2025-03-03</td>
+      <td>Medium</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td rowspan="2">Bob Smith</td>
+      <td rowspan="2"><a href="mailto:bob@example.com">bob@example.com</a></td>
+      <td>Great portfolio! Let's collaborate.</td>
+      <td>2025-03-05</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Please reply at your earliest convenience.</td>
+      <td>2025-03-06</td>
+      <td>Low</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Carol White</td>
+      <td><a href="mailto:carol@example.com">carol@example.com</a></td>
+      <td>I found a bug on your contact page.</td>
+      <td>2025-03-10</td>
+      <td>High</td>
+    </tr>
+  </tbody>
+</table>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 My Website</p>
+</footer>
+
+</body>
+</html>

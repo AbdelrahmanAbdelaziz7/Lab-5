@@ -1,0 +1,106 @@
+h1 {
+    color: blue;
+    font-style: italic;
+    padding: 10px;
+}
+.skills {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.skills th {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+}
+
+.skills td {
+    padding: 10px;
+}
+
+/* alternating rows */
+.skills tr:nth-child(even) {
+    background-color: #f3e6ff;
+}
+
+/* hover effect */
+.skills tr:hover {
+    background-color: #ddd;
+}
+
+/* category column */
+.category {
+    font-weight: bold;
+}
+
+/* good skills */
+.good {
+    background-color: lightgreen;
+}
+
+/* bad skills */
+.bad {
+    background-color: lightcoral;
+}
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Layout Grid */
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cards inside skills/projects */
+.skills-list,
+.projects-grid {
+  display: flex; /* Flexbox for inner alignment */
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill-card,
+.project-card {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 10px;
+  flex: 1 1 calc(50% - 15px); /* Two cards per row on medium screens */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Special card styling */
+.special-card {
+  background-color: #ffd700;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Header */
+.profile {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Section titles */
+h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
